@@ -1,30 +1,24 @@
-const PdfPrinter = require("pdfmake");
-const fs = require("fs");
+// SERVER
 
-const fonts = require("./fonts");
-const ticketStyles = require("./styles/ticketStyles");
-const reportStyles = require("./styles/reportStyles");
-// const { content } = require("./pdfContent");
-// const { content } = require("./ticketContent");
-const { content } = require("./templates/liquidacionEstacionario");
+const express = require("express");
+const app = express();
+const morgan = require("morgan");
+const cors = require("cors");
 
-// TICKET SETTINGS
-let ticketDefinition = {
-  content: content,
-  styles: ticketStyles,
-  pageSize: { width: 300, height: 1000 },
-};
+// settings
+app.set("port", process.env.PORT || 3001);
+app.set("json spaces", 2);
 
-// FULL SIZE REPORT SETTINGS
-let reportDefinition = {
-  content: content,
-  styles: reportStyles,
-  // pageSize: "A5",
-  // pageSize: { height: 1000 },
-  // pageOrientation: "landscape",
-};
+// middlewares
+app.use(morgan("dev"));
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+app.use(cors());
 
-const printer = new PdfPrinter(fonts);
-let pdfDoc = printer.createPdfKitDocument(reportDefinition);
-pdfDoc.pipe(fs.createWriteStream("pdfs/pdfTest.pdf"));
-pdfDoc.end();
+// routes
+app.use(require("./routes/reports"));
+
+// starting the server
+app.listen(app.get("port"), () => {
+  console.log(`Server running on port: ${app.get("port")}`);
+});
