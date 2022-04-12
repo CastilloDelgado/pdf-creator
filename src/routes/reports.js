@@ -10,6 +10,9 @@ const reportStyles = require("../styles/reportStyles");
 // const { liquidacionPortatilContent } = require("../templates/ticketContent");
 const { content } = require("../templates/ticketContent");
 const { estacionarioContent } = require("../templates/liquidacionEstacionario");
+const {
+  prenominaContent,
+} = require("../templates/liquidacionEstacionarioTemplate");
 
 // TICKET SETTINGS
 let liquidacionPortatilDefinition = {
@@ -24,6 +27,12 @@ let liquidacionEstacionarioDefinition = {
   styles: reportStyles,
 };
 
+// FULL SIZE REPORT SETTINGS
+let prenominaEstacionarioDefinition = {
+  content: prenominaContent,
+  styles: reportStyles,
+};
+
 router.get("/estacionario/liquidacion", (req, res) => {
   const printer = new PdfPrinter(fonts);
   let pdfDoc = printer.createPdfKitDocument(liquidacionEstacionarioDefinition);
@@ -34,7 +43,7 @@ router.get("/estacionario/liquidacion", (req, res) => {
 
 router.get("/estacionario/prenomina", (req, res) => {
   const printer = new PdfPrinter(fonts);
-  let pdfDoc = printer.createPdfKitDocument(liquidacionEstacionarioDefinition);
+  let pdfDoc = printer.createPdfKitDocument(prenominaEstacionarioDefinition);
   pdfDoc.pipe(fs.createWriteStream("./pdfs/estacionario-prenomina.pdf"));
   pdfDoc.end();
   res.json({ message: "Reporte creado con exito!" });

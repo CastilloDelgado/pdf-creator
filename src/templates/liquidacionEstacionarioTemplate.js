@@ -1,5 +1,5 @@
 module.exports = {
-  content: [
+  prenominaContent: [
     {
       // HEADER
       columns: [
@@ -84,292 +84,277 @@ module.exports = {
       ],
     },
 
-    // SALES TABLE
-    {
-      text: "\nVenta:\n\n",
-      style: "bigBoldLabel",
-    },
+    // NEW TABLE
     {
       table: {
         body: [
           [
-            { text: "Ventas", style: "headerCell", colSpan: 6 },
-            {},
-            {},
-            {},
-            {},
-            {},
-            { text: "Comisión", style: "headerCell", colSpan: 4 },
-            {},
-            {},
-            {},
-            { text: "Bono", style: "headerCell" },
-          ],
-          [
             {
-              text: "Tipo",
+              colSpan: 4,
+              text: "TANQUE ESTACIONARIO",
               style: "subheaderCell",
             },
+            {},
+            {},
+            {},
             {
-              text: "Lts",
+              colSpan: 2,
+              text: "P. Pagados",
               style: "subheaderCell",
             },
+            {},
             {
-              text: "ANT",
-              style: "subheaderCell",
-            },
-            {
-              text: "ACT",
-              style: "subheaderCell",
-            },
-            {
-              text: "T. Lts",
-              style: "subheaderCell",
-            },
-            {
+              colSpan: 2,
               text: "Puntos",
               style: "subheaderCell",
             },
+            {},
             {
-              text: "Lts",
+              colSpan: 9,
+              text: "Percepciones",
+              style: "subheaderCell",
+            },
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {
+              colSpan: 3,
+              text: "Otras percepciones",
+              style: "subheaderCell",
+            },
+            {},
+            {},
+          ],
+          [
+            {
+              text: "DíaMes",
               style: "subheaderCell",
             },
             {
-              text: "ANT",
+              text: "No. Veh.",
               style: "subheaderCell",
             },
             {
-              text: "P. Día (*)",
+              text: "Pto.",
               style: "subheaderCell",
             },
             {
-              text: "Total",
+              text: "Notas",
               style: "subheaderCell",
             },
             {
-              text: "Lts",
+              text: "A",
+              style: "subheaderCell",
+            },
+            {
+              text: "B",
+              style: "subheaderCell",
+            },
+            {
+              text: "A",
+              style: "subheaderCell",
+            },
+            {
+              text: "B",
+              style: "subheaderCell",
+            },
+            {
+              text: "Lts A",
+              style: "subheaderCell",
+            },
+            {
+              text: "Lts B",
+              style: "subheaderCell",
+            },
+            {
+              text: "Lts C",
+              style: "subheaderCell",
+            },
+            {
+              text: "Lts D",
+              style: "subheaderCell",
+            },
+            {
+              text: "Lts E",
+              style: "subheaderCell",
+            },
+            {
+              text: "Lts F",
+              style: "subheaderCell",
+            },
+            {
+              text: "Lts Vtas",
+              style: "subheaderCell",
+            },
+            {
+              text: "Comisión",
+              style: "subheaderCell",
+            },
+            {
+              text: "Lts/Bono",
+              style: "subheaderCell",
+            },
+            {
+              text: "DíaMes",
+              style: "subheaderCell",
+            },
+            {
+              text: "Concepto",
+              style: "subheaderCell",
+            },
+            {
+              text: "Imp",
               style: "subheaderCell",
             },
           ],
           [
-            { text: "A", style: "commonCell" },
+            { text: "00-00", style: "commonCell" },
+            { text: "00-XX", style: "commonCell" },
+            { text: "XXXX", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "$0000.00", style: "commonCell" },
             { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
+            { text: "00-00", style: "commonCell" },
+            { text: "XXXXXXXX", style: "commonCell" },
+            { text: "$0000.00", style: "commonCell" },
           ],
           [
-            { text: "B", style: "commonCell" },
+            { text: "00-00", style: "commonCell" },
+            { text: "00-XX", style: "commonCell" },
+            { text: "XXXX", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "$0000.00", style: "commonCell" },
             { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
+            { text: "00-00", style: "commonCell" },
+            { text: "XXXXXXXX", style: "commonCell" },
+            { text: "$0000.00", style: "commonCell" },
           ],
           [
-            { text: "C", style: "commonCell" },
+            { text: "00-00", style: "commonCell" },
+            { text: "00-XX", style: "commonCell" },
+            { text: "XXXX", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "$0000.00", style: "commonCell" },
             { text: "0000", style: "commonCell" },
+            { text: "00-00", style: "commonCell" },
+            { text: "XXXXXXXX", style: "commonCell" },
+            { text: "$0000.00", style: "commonCell" },
+          ],
+          [
+            { text: "00-00", style: "commonCell" },
+            { text: "00-XX", style: "commonCell" },
+            { text: "XXXX", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "$0000.00", style: "commonCell" },
             { text: "0000", style: "commonCell" },
+            { text: "00-00", style: "commonCell" },
+            { text: "XXXXXXXX", style: "commonCell" },
+            { text: "$0000.00", style: "commonCell" },
+          ],
+          [
+            { text: "00-00", style: "commonCell" },
+            { text: "00-XX", style: "commonCell" },
+            { text: "XXXX", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "$0000.00", style: "commonCell" },
             { text: "0000", style: "commonCell" },
+            { text: "00-00", style: "commonCell" },
+            { text: "XXXXXXXX", style: "commonCell" },
+            { text: "$0000.00", style: "commonCell" },
+          ],
+          [
+            { text: "00-00", style: "commonCell" },
+            { text: "00-XX", style: "commonCell" },
+            { text: "XXXX", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "00", style: "commonCell" },
+            { text: "$0000.00", style: "commonCell" },
             { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
+            { text: "00-00", style: "commonCell" },
+            { text: "XXXXXXXX", style: "commonCell" },
+            { text: "$0000.00", style: "commonCell" },
           ],
         ],
       },
     },
 
-    // ACUMMULATED TABLE
-    {
-      text: "\nAcumulado:\n\n",
-      style: "bigBoldLabel",
-    },
-    {
-      table: {
-        body: [
-          [
-            { text: "Ventas", style: "headerCell", colSpan: 6 },
-            {},
-            {},
-            {},
-            {},
-            {},
-            { text: "Comisión", style: "headerCell", colSpan: 4 },
-            {},
-            {},
-            {},
-            { text: "Bono", style: "headerCell" },
-          ],
-          [
-            {
-              text: "Tipo",
-              style: "subheaderCell",
-            },
-            {
-              text: "Lts",
-              style: "subheaderCell",
-            },
-            {
-              text: "ANT",
-              style: "subheaderCell",
-            },
-            {
-              text: "ACT",
-              style: "subheaderCell",
-            },
-            {
-              text: "T. Lts",
-              style: "subheaderCell",
-            },
-            {
-              text: "Puntos",
-              style: "subheaderCell",
-            },
-            {
-              text: "Lts",
-              style: "subheaderCell",
-            },
-            {
-              text: "ANT",
-              style: "subheaderCell",
-            },
-            {
-              text: "P. Día (*)",
-              style: "subheaderCell",
-            },
-            {
-              text: "Total",
-              style: "subheaderCell",
-            },
-            {
-              text: "Lts",
-              style: "subheaderCell",
-            },
-          ],
-          [
-            { text: "A", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-          ],
-          [
-            { text: "B", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-          ],
-          [
-            { text: "C", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-            { text: "0000", style: "commonCell" },
-          ],
-        ],
-      },
-    },
-
-    // RATES TABLE
-    {
-      text: "\n",
-      style: "bigLabel",
-    },
+    { text: "\n" },
 
     {
       columns: [
         [
           {
-            text: "\nTarifas para comisiones:\n",
-            style: "bigBoldLabel",
-          },
-          {
-            text: "\nTarifa por litro:\n\n",
-            style: "bigLabel",
-          },
-          {
-            table: {
-              body: [
-                [
-                  { text: "Tipo", style: "headerCell" },
-                  { text: "Comisión", style: "headerCell" },
-                  { text: "P/Bono", style: "headerCell" },
-                ],
-                [
-                  { text: "A", style: "commonCell" },
-                  { text: "$000.00", style: "commonCell" },
-                  { text: "$000.00", style: "commonCell" },
-                ],
-                [
-                  { text: "B", style: "commonCell" },
-                  { text: "$000.00", style: "commonCell" },
-                  { text: "$000.00", style: "commonCell" },
-                ],
-                [
-                  { text: "C", style: "commonCell" },
-                  { text: "$000.00", style: "commonCell" },
-                  { text: "$000.00", style: "commonCell" },
-                ],
-                [
-                  { text: "D", style: "commonCell" },
-                  { text: "$000.00", style: "commonCell" },
-                  { text: "$000.00", style: "commonCell" },
-                ],
-                [
-                  { text: "E", style: "commonCell" },
-                  { text: "$000.00", style: "commonCell" },
-                  { text: "$000.00", style: "commonCell" },
-                ],
-                [
-                  { text: "F", style: "commonCell" },
-                  { text: "$000.00", style: "commonCell" },
-                  { text: "$000.00", style: "commonCell" },
-                ],
-              ],
-            },
-          },
-        ],
-        [
-          {
-            text: "\n\n",
-            style: "bigBoldLabel",
-          },
-          {
-            text: "\nBono:\n\n",
+            text: "Pagos y retenciones:\n\n",
             style: "bigLabel",
           },
           {
@@ -377,70 +362,44 @@ module.exports = {
               style: "simpleTable",
               body: [
                 [
-                  { text: "Tipo", style: "headerCell" },
-                  { text: "Comisión", style: "headerCell" },
+                  { text: "Concepto", style: "headerCell" },
+                  { text: "Importe", style: "headerCell" },
                 ],
                 [
-                  { text: "000", style: "commonCell" },
-                  { text: "$000.00", style: "commonCell" },
+                  { text: "Comisiones ganadas", style: "commonCell" },
+                  { text: "$0000.00", style: "commonCell" },
                 ],
                 [
-                  { text: "000", style: "commonCell" },
-                  { text: "$000.00", style: "commonCell" },
+                  { text: "Bono productividad", style: "commonCell" },
+                  { text: "$0000.00", style: "commonCell" },
                 ],
                 [
-                  { text: "000", style: "commonCell" },
-                  { text: "$000.00", style: "commonCell" },
+                  { text: "Bono puntualidad", style: "commonCell" },
+                  { text: "$0000.00", style: "commonCell" },
                 ],
                 [
-                  { text: "000", style: "commonCell" },
-                  { text: "$000.00", style: "commonCell" },
+                  { text: "Otras percepciones", style: "commonCell" },
+                  { text: "$0000.00", style: "commonCell" },
                 ],
                 [
-                  { text: "000", style: "commonCell" },
-                  { text: "$000.00", style: "commonCell" },
+                  { text: "Percepción total", style: "commonCell" },
+                  { text: "$0000.00", style: "commonCell" },
                 ],
                 [
-                  { text: "000", style: "commonCell" },
-                  { text: "$000.00", style: "commonCell" },
-                ],
-              ],
-            },
-          },
-          {
-            text: "\nRemanente:\n\n",
-            style: "bigLabel",
-          },
-          {
-            table: {
-              body: [
-                [
-                  { text: "Tipo", style: "headerCell" },
-                  { text: "Comisión", style: "headerCell" },
+                  { text: "Faltantes", style: "commonCell" },
+                  { text: "$0000.00", style: "commonCell" },
                 ],
                 [
-                  { text: "000", style: "commonCell" },
-                  { text: "$000.00", style: "commonCell" },
+                  { text: "Crédictos", style: "commonCell" },
+                  { text: "$0000.00", style: "commonCell" },
                 ],
                 [
-                  { text: "000", style: "commonCell" },
-                  { text: "$000.00", style: "commonCell" },
+                  { text: "Abono", style: "commonCell" },
+                  { text: "$0000.00", style: "commonCell" },
                 ],
                 [
-                  { text: "000", style: "commonCell" },
-                  { text: "$000.00", style: "commonCell" },
-                ],
-                [
-                  { text: "000", style: "commonCell" },
-                  { text: "$000.00", style: "commonCell" },
-                ],
-                [
-                  { text: "000", style: "commonCell" },
-                  { text: "$000.00", style: "commonCell" },
-                ],
-                [
-                  { text: "000", style: "commonCell" },
-                  { text: "$000.00", style: "commonCell" },
+                  { text: "Percepción neta", style: "commonCell" },
+                  { text: "$0000.00", style: "commonCell" },
                 ],
               ],
             },
@@ -448,62 +407,183 @@ module.exports = {
         ],
         [
           {
-            text: "\nCréditos/Días Laborados:\n\n\n\n",
-            style: "bigBoldLabel",
+            text: "Comisión chofer:\n\n",
+            style: "bigLabel",
           },
           {
             table: {
+              style: "simpleTable",
               body: [
                 [
-                  { text: "", style: "headerCell" },
-                  { text: "Hoy", style: "headerCell" },
-                  { text: "ACUM", style: "headerCell" },
+                  { text: "Tipo cte.", style: "headerCell" },
+                  { text: "Com. x Lts", style: "headerCell" },
+                  { text: "Propor. Lts/Bono", style: "headerCell" },
+                  { text: "Com. x Lts", style: "headerCell" },
+                  { text: "Propor. Lts/Bono", style: "headerCell" },
                 ],
                 [
-                  { text: "Créditos", style: "commonCell" },
+                  { text: "A", style: "commonCell" },
                   { text: "00", style: "commonCell" },
                   { text: "00", style: "commonCell" },
-                ],
-                [
-                  { text: "Faltantes", style: "commonCell" },
-                  { text: "00", style: "commonCell" },
-                  { text: "00", style: "commonCell" },
-                ],
-                [
-                  { text: "Abono CTA", style: "commonCell" },
                   { text: "00", style: "commonCell" },
                   { text: "00", style: "commonCell" },
                 ],
                 [
-                  { text: "A descontar", style: "commonCell" },
+                  { text: "B", style: "commonCell" },
+                  { text: "00", style: "commonCell" },
+                  { text: "00", style: "commonCell" },
+                  { text: "00", style: "commonCell" },
+                  { text: "00", style: "commonCell" },
+                ],
+                [
+                  { text: "C", style: "commonCell" },
+                  { text: "00", style: "commonCell" },
+                  { text: "00", style: "commonCell" },
+                  { text: "00", style: "commonCell" },
+                  { text: "00", style: "commonCell" },
+                ],
+                [
+                  { text: "D", style: "commonCell" },
+                  { text: "00", style: "commonCell" },
+                  { text: "00", style: "commonCell" },
+                  { text: "00", style: "commonCell" },
+                  { text: "00", style: "commonCell" },
+                ],
+                [
+                  { text: "E", style: "commonCell" },
+                  { text: "00", style: "commonCell" },
+                  { text: "00", style: "commonCell" },
+                  { text: "00", style: "commonCell" },
+                  { text: "00", style: "commonCell" },
+                ],
+                [
+                  { text: "F", style: "commonCell" },
+                  { text: "00", style: "commonCell" },
+                  { text: "00", style: "commonCell" },
                   { text: "00", style: "commonCell" },
                   { text: "00", style: "commonCell" },
                 ],
               ],
             },
           },
+        ],
+        [
           {
-            text: "\n",
-            style: "bigBoldLabel",
+            text: "Deducciones:\n\n",
+            style: "bigLabel",
           },
           {
             table: {
+              style: "simpleTable",
               body: [
                 [
-                  { text: "", style: "headerCell" },
-                  { text: "Días", style: "headerCell" },
+                  { text: "DíaMes", style: "headerCell" },
+                  { text: "Faltante", style: "headerCell" },
+                  { text: "Créditos", style: "headerCell" },
+                  { text: "Abonos", style: "headerCell" },
                 ],
                 [
-                  { text: "Trascurridos", style: "commonCell" },
-                  { text: "00", style: "commonCell" },
+                  { text: "00-00", style: "commonCell" },
+                  { text: "$0000.00", style: "commonCell" },
+                  { text: "$0000.00", style: "commonCell" },
+                  { text: "$0000.00", style: "commonCell" },
                 ],
                 [
-                  { text: "Trabajados", style: "commonCell" },
-                  { text: "00", style: "commonCell" },
+                  { text: "00-00", style: "commonCell" },
+                  { text: "$0000.00", style: "commonCell" },
+                  { text: "$0000.00", style: "commonCell" },
+                  { text: "$0000.00", style: "commonCell" },
                 ],
                 [
-                  { text: "Por trascurrir", style: "commonCell" },
-                  { text: "00", style: "commonCell" },
+                  { text: "00-00", style: "commonCell" },
+                  { text: "$0000.00", style: "commonCell" },
+                  { text: "$0000.00", style: "commonCell" },
+                  { text: "$0000.00", style: "commonCell" },
+                ],
+                [
+                  { text: "00-00", style: "commonCell" },
+                  { text: "$0000.00", style: "commonCell" },
+                  { text: "$0000.00", style: "commonCell" },
+                  { text: "$0000.00", style: "commonCell" },
+                ],
+                [
+                  { text: "00-00", style: "commonCell" },
+                  { text: "$0000.00", style: "commonCell" },
+                  { text: "$0000.00", style: "commonCell" },
+                  { text: "$0000.00", style: "commonCell" },
+                ],
+                [
+                  { text: "00-00", style: "commonCell" },
+                  { text: "$0000.00", style: "commonCell" },
+                  { text: "$0000.00", style: "commonCell" },
+                  { text: "$0000.00", style: "commonCell" },
+                ],
+                [
+                  { text: "00-00", style: "commonCell" },
+                  { text: "$0000.00", style: "commonCell" },
+                  { text: "$0000.00", style: "commonCell" },
+                  { text: "$0000.00", style: "commonCell" },
+                ],
+              ],
+            },
+          },
+        ],
+        [
+          {
+            text: "Remanente:\n\n",
+            style: "bigLabel",
+          },
+          {
+            table: {
+              style: "simpleTable",
+              body: [
+                [
+                  { text: "L. Superior", style: "headerCell" },
+                  { text: "Importe", style: "headerCell" },
+                ],
+                [
+                  { text: "0000", style: "commonCell" },
+                  { text: "$0000.00", style: "commonCell" },
+                ],
+
+                [
+                  { text: "0000", style: "commonCell" },
+                  { text: "$0000.00", style: "commonCell" },
+                ],
+
+                [
+                  { text: "0000", style: "commonCell" },
+                  { text: "$0000.00", style: "commonCell" },
+                ],
+
+                [
+                  { text: "0000", style: "commonCell" },
+                  { text: "$0000.00", style: "commonCell" },
+                ],
+
+                [
+                  { text: "0000", style: "commonCell" },
+                  { text: "$0000.00", style: "commonCell" },
+                ],
+
+                [
+                  { text: "0000", style: "commonCell" },
+                  { text: "$0000.00", style: "commonCell" },
+                ],
+
+                [
+                  { text: "0000", style: "commonCell" },
+                  { text: "$0000.00", style: "commonCell" },
+                ],
+
+                [
+                  { text: "0000", style: "commonCell" },
+                  { text: "$0000.00", style: "commonCell" },
+                ],
+
+                [
+                  { text: "0000", style: "commonCell" },
+                  { text: "$0000.00", style: "commonCell" },
                 ],
               ],
             },
