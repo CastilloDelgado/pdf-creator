@@ -1,5 +1,5 @@
-const bigSize = 8;
-const simpleSize = 6;
+const bigSize = 10;
+const simpleSize = 7;
 const headerCellColor = "#cccccc";
 
 module.exports = {

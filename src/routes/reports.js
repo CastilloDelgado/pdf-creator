@@ -7,30 +7,43 @@ const fs = require("fs");
 const fonts = require("../fonts");
 const ticketStyles = require("../styles/ticketStyles");
 const reportStyles = require("../styles/reportStyles");
-// const { content } = require("./pdfContent");
-// const { content } = require("./ticketContent");
-const { content } = require("../templates/liquidacionEstacionario");
+// const { liquidacionPortatilContent } = require("../templates/ticketContent");
+const { content } = require("../templates/ticketContent");
+const { estacionarioContent } = require("../templates/liquidacionEstacionario");
 
 // TICKET SETTINGS
-let ticketDefinition = {
+let liquidacionPortatilDefinition = {
   content: content,
   styles: ticketStyles,
   pageSize: { width: 300, height: 1000 },
 };
 
 // FULL SIZE REPORT SETTINGS
-let reportDefinition = {
-  content: content,
+let liquidacionEstacionarioDefinition = {
+  content: estacionarioContent,
   styles: reportStyles,
-  // pageSize: "A5",
-  // pageSize: { height: 1000 },
-  // pageOrientation: "landscape",
 };
 
 router.get("/estacionario/liquidacion", (req, res) => {
   const printer = new PdfPrinter(fonts);
-  let pdfDoc = printer.createPdfKitDocument(reportDefinition);
-  pdfDoc.pipe(fs.createWriteStream("./pdfs/liquidacion-estacionario.pdf"));
+  let pdfDoc = printer.createPdfKitDocument(liquidacionEstacionarioDefinition);
+  pdfDoc.pipe(fs.createWriteStream("./pdfs/estacionario-liquidacion.pdf"));
+  pdfDoc.end();
+  res.json({ message: "Reporte creado con exito!" });
+});
+
+router.get("/estacionario/prenomina", (req, res) => {
+  const printer = new PdfPrinter(fonts);
+  let pdfDoc = printer.createPdfKitDocument(liquidacionEstacionarioDefinition);
+  pdfDoc.pipe(fs.createWriteStream("./pdfs/estacionario-prenomina.pdf"));
+  pdfDoc.end();
+  res.json({ message: "Reporte creado con exito!" });
+});
+
+router.get("/portatil/liquidacion", (req, res) => {
+  const printer = new PdfPrinter(fonts);
+  let pdfDoc = printer.createPdfKitDocument(liquidacionPortatilDefinition);
+  pdfDoc.pipe(fs.createWriteStream("./pdfs/portatil-liquidacion.pdf"));
   pdfDoc.end();
   res.json({ message: "Reporte creado con exito!" });
 });

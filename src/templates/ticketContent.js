@@ -181,6 +181,182 @@ module.exports = {
               },
             },
           ],
+
+          [
+            {
+              text: [
+                { text: "Acumulado para bono\n", style: "simpleBoldLabel" },
+              ],
+              border: [false, false, false, false],
+              colSpan: 3,
+            },
+            {},
+            {},
+          ],
+          /*
+           *
+           *  Table
+           *
+           */
+          [
+            {
+              colSpan: 3,
+              border: [false, false, false, false],
+              style: "simpleTable",
+              table: {
+                widths: [100, 100],
+                body: [
+                  [
+                    {
+                      text: "Concepto",
+                      style: "headerCell",
+                    },
+                    {
+                      text: "Total",
+                      style: "headerCell",
+                    },
+                  ],
+                  ["Sobre venta anterio", "00"],
+                  ["Venta acum quincena", "00"],
+                  ["Total", "00"],
+                ],
+              },
+            },
+          ],
+
+          [
+            {
+              text: [{ text: "Créditos\n", style: "simpleBoldLabel" }],
+              border: [false, false, false, false],
+              colSpan: 3,
+            },
+            {},
+            {},
+          ],
+          /*
+           *
+           *  Table
+           *
+           */
+          [
+            {
+              colSpan: 3,
+              border: [false, false, false, false],
+              style: "simpleTable",
+              table: {
+                widths: [46, 46, 46, 46],
+                body: [
+                  [
+                    {
+                      text: "",
+                      style: "headerCell",
+                    },
+                    {
+                      text: "Faltantes",
+                      style: "headerCell",
+                    },
+                    {
+                      text: "Créditos",
+                      style: "headerCell",
+                    },
+                    {
+                      text: "Abono",
+                      style: "headerCell",
+                    },
+                  ],
+                  ["Hoy", "$0000.00", "$0000.00", "$0000.00"],
+                  ["Acum", "$0000.00", "$0000.00", "$0000.00"],
+                ],
+              },
+            },
+          ],
+
+          [
+            {
+              text: [
+                { text: "Información General\n", style: "simpleBoldLabel" },
+              ],
+              border: [false, false, false, false],
+              colSpan: 3,
+            },
+            {},
+            {},
+          ],
+          /*
+           *
+           *  Table
+           *
+           */
+          [
+            {
+              colSpan: 3,
+              border: [false, false, false, false],
+              style: "simpleTable",
+              table: {
+                widths: [100, 100],
+                body: [
+                  [
+                    {
+                      text: "Concepto",
+                      style: "headerCell",
+                    },
+                    {
+                      text: "Cantidad",
+                      style: "headerCell",
+                    },
+                  ],
+                  ["Días transcurridos", "00"],
+                  ["Días trabajados", "00"],
+                  ["Días por transcurrir", "00"],
+                ],
+              },
+            },
+          ],
+
+          [
+            {
+              text: [{ text: "Tabulador\n", style: "simpleBoldLabel" }],
+              border: [false, false, false, false],
+              colSpan: 3,
+            },
+            {},
+            {},
+          ],
+          /*
+           *
+           *  Table
+           *
+           */
+          [
+            {
+              colSpan: 3,
+              border: [false, false, false, false],
+              style: "simpleTable",
+              table: {
+                widths: [64, 64, 64],
+                body: [
+                  [
+                    {
+                      text: "L. Inferior",
+                      style: "headerCell",
+                    },
+                    {
+                      text: "L. Superior",
+                      style: "headerCell",
+                    },
+                    {
+                      text: "Comisión",
+                      style: "headerCell",
+                    },
+                  ],
+                  ["0000", "0000", "$0000.00"],
+                  ["0000", "0000", "$0000.00"],
+                  ["0000", "0000", "$0000.00"],
+                  ["0000", "0000", "$0000.00"],
+                ],
+              },
+            },
+          ],
         ],
       },
     },
